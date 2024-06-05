@@ -6,7 +6,6 @@ import "/css/Uiverse.css";
 import NavbarNextUi from "../componentsUi/NavbarNextUi";
 import { Providers } from "./providers";
 
-
 const fontStyle = Mooli({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
@@ -23,7 +22,7 @@ export default function RootLayout({
     <html lang="en" className="dark" suppressHydrationWarning={true}>
       <body className={fontStyle.className}>
         <Providers>
-          <div className="">
+          <div className="overflow-hidden">
             <NavbarNextUi />
             {children}
           </div>

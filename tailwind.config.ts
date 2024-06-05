@@ -92,9 +92,15 @@ const config = {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
+        "border-beam": {
+          "100%": {
+            "offset-distance": "100%",
+          },
+        },
       },
       animation: {
         orbit: "orbit calc(var(--duration)*1s) linear infinite",
+        "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         scroll:
