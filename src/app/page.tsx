@@ -67,7 +67,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <BorderBeam size={290} duration={10} delay={9} />
+          <BorderBeam size={290} duration={10} delay={3} />
+          <BorderBeam size={290} duration={10} delay={10} />
+          <BorderBeam size={290} duration={10} delay={5} />
+          <BorderBeam size={290} duration={10} delay={7} />
         </div>
       </div>
     </div>
