@@ -16,7 +16,7 @@ export default function Home() {
   }, []);
   return (
     <div className=" ">
-      <div className="mb-3 mt-10 flex place-content-center px-5 sm:mt-20">
+      <div className="mb-3  mt-5 flex place-content-center px-5 ">
         <div
           data-aos="fade-up"
           className="relative w-full rounded-[24px] border border-slate-700   sm:mx-auto sm:max-w-xl"
