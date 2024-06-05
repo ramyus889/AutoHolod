@@ -26,7 +26,7 @@ export default function Home() {
                 <div
                   data-aos="fade-right"
                   data-aos-delay="100"
-                  className=" z-10 text-center text-[20px] sm:text-[40px]"
+                  className=" z-10 text-center font-['Inter'] text-[20px] sm:text-[40px]"
                 >
                   Авто Холод Каякент
                 </div>
@@ -75,6 +75,9 @@ export default function Home() {
           <BorderBeam size={290} duration={10} delay={10} />
           <BorderBeam size={290} duration={10} delay={5} />
           <BorderBeam size={290} duration={10} delay={7} />
+          <div className="mt-5 border-t border-slate-500">
+            <div className="py-3 ps-5">Auto Holod Kayakent © 2024</div>
+          </div>
         </div>
       </div>
     </div>
