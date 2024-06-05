@@ -14,25 +14,29 @@ export default function Home() {
     });
   }, []);
   return (
-    <div className="overflow-hidden ">
+    <div className=" ">
       <div className="mb-3 mt-10 flex place-content-center px-5 sm:mt-20">
         <div
           data-aos="fade-up"
           className="relative w-full rounded-[24px] border border-slate-700   sm:mx-auto sm:max-w-xl"
         >
           <div className="relative mx-8 rounded-3xl   py-5 shadow sm:p-10 sm:py-5 md:mx-0">
-            <div className="mx-auto max-w-md ">
+            <div className=" mx-auto max-w-md">
               <div className=" flex flex-col gap-5">
                 <div
                   data-aos="fade-right"
                   data-aos-delay="100"
-                  className=" text-center text-[20px] sm:text-[40px]"
+                  className=" z-10 text-center text-[20px] sm:text-[40px]"
                 >
                   Авто Холод Каякент
                 </div>
                 <div className="w-full border-b border-slate-500 pb-5"></div>
-                <div className="">
-                  <div data-aos="fade-right" data-aos-delay="200" className="">
+                <div className="z-10">
+                  <div
+                    data-aos="fade-right"
+                    data-aos-delay="200"
+                    className="z-10"
+                  >
                     Написать в Whatsapp
                   </div>
                   <Link
@@ -40,7 +44,7 @@ export default function Home() {
                     data-aos-delay="300"
                     href="https://wa.me/79689866661"
                     target="_blank"
-                    className="font-bold underline"
+                    className="z-[1000] font-bold underline"
                   >
                     7 968 986-66-61
                   </Link>
