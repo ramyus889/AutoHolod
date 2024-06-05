@@ -1,5 +1,6 @@
 "use client";
 
+import { FaMapMarker } from "react-icons/fa";
 import Link from "next/link";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -38,16 +39,23 @@ export default function Home() {
                   7 968 986-66-61
                 </Link>
               </div>
-              <iframe
-                data-aos="fade-up"
-                data-aos-delay="400"
-                suppressHydrationWarning={true}
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1565.788892560775!2d47.94987377969101!3d42.37483565072484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sru!4v1717575789416!5m2!1sru!2sru"
-                className="mt-[20px] h-[350px] rounded-xl border-0 sm:mt-[50px] sm:h-[450px]"
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+              <div className="relative w-full">
+                <iframe
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                  suppressHydrationWarning={true}
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d782.8915724813163!2d47.95011203724118!3d42.37506618073936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sru!4v1717576116052!5m2!1sru!2sru"
+                  className="mt-[20px] h-[350px] w-full rounded-xl border-0 sm:mt-[50px] sm:h-[450px]"
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+                <FaMapMarker
+                  color="red"
+                  size={40}
+                  className="absolute left-[240px] top-[150px] animate-bounce max-[560px]:left-[230px] max-[520px]:left-[210px] max-[460px]:left-[180px] max-[400px]:left-[140px] sm:top-[200px]"
+                />
+              </div>
             </div>
           </div>
         </div>
