@@ -1,4 +1,5 @@
 "use client";
+import { BsWhatsapp } from "react-icons/bs";
 
 import { FaMapMarker } from "react-icons/fa";
 import Link from "next/link";
@@ -31,23 +32,26 @@ export default function Home() {
                   Авто Холод Каякент
                 </div>
                 <div className="w-full border-b border-slate-500 pb-5"></div>
-                <div className="z-10">
-                  <div
-                    data-aos="fade-right"
-                    data-aos-delay="200"
-                    className="z-10"
-                  >
-                    Написать в Whatsapp
+                <div className="flex max-w-[280px] items-center gap-5 rounded-xl border border-green-900 px-5 py-3">
+                  <BsWhatsapp data-aos="fade-right" color="green" size={32} />
+                  <div className="z-10">
+                    <div
+                      data-aos="fade-right"
+                      data-aos-delay="200"
+                      className="z-10"
+                    >
+                      Написать в Whatsapp
+                    </div>
+                    <Link
+                      data-aos="fade-right"
+                      data-aos-delay="300"
+                      href="https://wa.me/79689866661"
+                      target="_blank"
+                      className="z-[1000] font-bold underline"
+                    >
+                      7 968 986-66-61
+                    </Link>
                   </div>
-                  <Link
-                    data-aos="fade-right"
-                    data-aos-delay="300"
-                    href="https://wa.me/79689866661"
-                    target="_blank"
-                    className="z-[1000] font-bold underline"
-                  >
-                    7 968 986-66-61
-                  </Link>
                 </div>
                 <div className="w-full border-b border-slate-500 "></div>
                 <div className="relative z-10 w-full">
