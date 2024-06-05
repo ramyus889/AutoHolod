@@ -43,7 +43,7 @@ export default function Home() {
                 data-aos-delay="400"
                 suppressHydrationWarning={true}
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1565.788892560775!2d47.94987377969101!3d42.37483565072484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sru!4v1717575789416!5m2!1sru!2sru"
-                className="mt-[20px] h-[300px] rounded-xl border-0 sm:mt-[50px] sm:h-[450px]"
+                className="mt-[20px] h-[350px] rounded-xl border-0 sm:mt-[50px] sm:h-[450px]"
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
