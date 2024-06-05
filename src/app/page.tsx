@@ -49,7 +49,7 @@ export default function Home() {
                     7 968 986-66-61
                   </Link>
                 </div>
-                <div className="relative w-full">
+                <div className="relative z-10 w-full">
                   <iframe
                     data-aos="fade-up"
                     data-aos-delay="400"
