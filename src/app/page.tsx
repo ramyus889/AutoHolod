@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div className="mt-20 flex place-content-center px-5">
       <div className="relative w-full rounded-xl border border-slate-500  py-3 sm:mx-auto sm:max-w-xl">
-        <div className="relative mx-8 rounded-3xl bg-black px-3 py-10 shadow sm:p-10 md:mx-0">
-          <div className="mx-auto max-w-md text-white">
+        <div className="relative mx-8 rounded-3xl  px-3 py-10 shadow sm:p-10 md:mx-0">
+          <div className="mx-auto max-w-md ">
             <div className="mt-5 flex flex-col gap-5">
               <div className="text-[40px]">Авто Холод Каякент</div>
               <div className="">
