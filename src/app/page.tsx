@@ -4,6 +4,7 @@ import { BsWhatsapp } from "react-icons/bs";
 import { FaMapMarker } from "react-icons/fa";
 import Link from "next/link";
 import { useEffect } from "react";
+import UserMap from "./components/UserMap";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { BorderBeam } from "./components/ui/border-beam";
@@ -56,24 +57,8 @@ export default function Home() {
                   </div>
                 </Link>
                 <div className="w-full border-b border-slate-500 "></div>
-                <div className="relative z-10 w-full">
-                  <iframe
-                    data-aos="fade-up"
-                    data-aos-delay="400"
-                    suppressHydrationWarning={true}
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d782.8915724813163!2d47.95011203724118!3d42.37506618073936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sru!4v1717576116052!5m2!1sru!2sru"
-                    className=" h-[350px] w-full rounded-xl border-0  sm:h-[450px]"
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  ></iframe>
-                  <FaMapMarker
-                    data-aos="fade-up"
-                    data-aos-delay="600"
-                    color="red"
-                    size={40}
-                    className="absolute left-[240px] top-[150px] animate-bounce max-[560px]:left-[230px] max-[520px]:left-[210px] max-[460px]:left-[180px] max-[400px]:left-[140px] sm:top-[170px]"
-                  />
+                <div className=" z-10 w-full">
+                  <UserMap />
                 </div>
               </div>
             </div>
