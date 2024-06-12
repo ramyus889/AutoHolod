@@ -39,22 +39,23 @@ export default function Home() {
                   Авто Холод Каякент
                 </div>
                 <div className="w-full border-b border-slate-500 pb-5"></div>
+
                 <Link
                   href="https://wa.me/79689866661"
                   target="_blank"
-                  className="flex max-w-[280px] items-center gap-5 rounded-xl border border-green-900 px-5 py-3"
+                  className="flex w-full place-content-center items-center gap-5 rounded-xl border border-green-900 px-5 py-3"
                 >
                   <BsWhatsapp data-aos="fade-right" color="green" size={32} />
                   <div className="z-10">
                     <div
-                      data-aos="fade-right"
+                      data-aos="fade-left"
                       data-aos-delay="200"
                       className="z-10"
                     >
                       Написать в Whatsapp
                     </div>
                     <div
-                      data-aos="fade-right"
+                      data-aos="fade-left"
                       data-aos-delay="300"
                       className="z-[1000] font-bold underline"
                     >
@@ -62,6 +63,7 @@ export default function Home() {
                     </div>
                   </div>
                 </Link>
+
                 <div className="w-full border-b border-slate-500 "></div>
                 <div className=" z-10 w-full">
                   <LazyMap />
