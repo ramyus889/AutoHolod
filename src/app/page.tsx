@@ -8,8 +8,14 @@ import UserMap from "./components/UserMap";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { BorderBeam } from "./components/ui/border-beam";
+import dynamic from "next/dynamic";
+import { Skeleton } from "@nextui-org/react";
 
 export default function Home() {
+  const LazyMap = dynamic(() => import("./components/UserMap"), {
+    ssr: false,
+    loading: () => <Skeleton className="h-[500px] w-full" />,
+  });
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -58,7 +64,7 @@ export default function Home() {
                 </Link>
                 <div className="w-full border-b border-slate-500 "></div>
                 <div className=" z-10 w-full">
-                  <UserMap />
+                  <LazyMap />
                 </div>
               </div>
             </div>
