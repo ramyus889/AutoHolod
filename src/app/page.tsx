@@ -40,13 +40,9 @@ export default function Home() {
                 </div>
                 <div className="w-full border-b border-slate-500 pb-5"></div>
 
-                <Link
-                  href="https://wa.me/79689866661"
-                  target="_blank"
-                  className="flex w-full place-content-center items-center gap-5 rounded-xl border border-green-900 px-5 py-3"
-                >
+                <div className="flex w-full place-content-center items-center gap-5 rounded-xl border border-green-900 px-5 py-3">
                   <BsWhatsapp data-aos="fade-right" color="green" size={32} />
-                  <div className="z-10">
+                  <div className="z-10 flex flex-col">
                     <div
                       data-aos="fade-left"
                       data-aos-delay="200"
@@ -54,15 +50,26 @@ export default function Home() {
                     >
                       Написать в Whatsapp
                     </div>
-                    <div
+                    <Link
                       data-aos="fade-left"
                       data-aos-delay="300"
+                      href="https://wa.me/79689866661"
+                      target="_blank"
                       className="z-[1000] font-bold underline"
                     >
                       7 968 986-66-61
-                    </div>
+                    </Link>
+                    <Link
+                      data-aos="fade-left"
+                      data-aos-delay="300"
+                      href="https://wa.me/79625090505"
+                      target="_blank"
+                      className="z-[1000] font-bold underline"
+                    >
+                      7 962 509-05-05
+                    </Link>
                   </div>
-                </Link>
+                </div>
 
                 <div className="w-full border-b border-slate-500 "></div>
                 <div className="z-10 w-full ">
