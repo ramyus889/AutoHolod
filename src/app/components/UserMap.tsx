@@ -4,7 +4,9 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { icon } from "leaflet";
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const ICON = icon({
   iconUrl:
     "https://images.vexels.com/media/users/3/131261/isolated/preview/b2e48580147ca0ed3f970f30bf8bb009-karten-standortmarkierung.png",
@@ -12,9 +14,16 @@ const ICON = icon({
 });
 
 export default function Map() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+    });
+  }, []);
   return (
     <div className="relative">
       <FaMapMarkerAlt
+        data-aos="fade-up"
+        data-aos-delay="500"
         color="red"
         size={40}
         className="absolute left-[270px] top-[120px] z-10 animate-bounce max-[530px]:left-[250px] max-[480px]:left-[230px] max-[440px]:left-[210px] max-[410px]:left-[190px] max-[370px]:left-[170px]"

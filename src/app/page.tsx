@@ -1,10 +1,8 @@
 "use client";
-import { BsWhatsapp } from "react-icons/bs";
 
-import { FaMapMarker } from "react-icons/fa";
+import { BsWhatsapp } from "react-icons/bs";
 import Link from "next/link";
 import { useEffect } from "react";
-import UserMap from "./components/UserMap";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { BorderBeam } from "./components/ui/border-beam";
