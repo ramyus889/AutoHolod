@@ -1,5 +1,6 @@
 "use client";
 
+import { FaMapMarkerAlt } from "react-icons/fa";
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { icon } from "leaflet";
@@ -12,18 +13,20 @@ const ICON = icon({
 
 export default function Map() {
   return (
-    <MapContainer
-      scrollWheelZoom={true}
-      className="relative z-0 h-[50vh] rounded-lg"
-      center={[42.375245, 47.95027]}
-      zoom={16}
-    >
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    <div className="relative">
+      <FaMapMarkerAlt
+        color="red"
+        size={40}
+        className="absolute left-[270px] top-[120px] z-10 animate-bounce max-[530px]:left-[250px] max-[480px]:left-[230px] max-[440px]:left-[210px] max-[410px]:left-[190px] max-[370px]:left-[170px]"
       />
-
-      <Marker position={[42.375245, 47.95027]} icon={ICON} />
-    </MapContainer>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1794.207945650357!2d47.949646203080675!3d42.37470123434952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sru!4v1718256596729!5m2!1sru!2sru"
+        className="w-full rounded-xl"
+        height="450"
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
   );
 }

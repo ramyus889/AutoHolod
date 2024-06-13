@@ -65,7 +65,7 @@ export default function Home() {
                 </Link>
 
                 <div className="w-full border-b border-slate-500 "></div>
-                <div className=" z-10 w-full">
+                <div className="z-10 w-full ">
                   <LazyMap />
                 </div>
               </div>
