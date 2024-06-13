@@ -21,14 +21,14 @@ export default function Home() {
   }, []);
   return (
     <div className=" ">
-      <div className="mb-3  mt-5 flex place-content-center px-5 ">
+      <div className="mb-3   flex place-content-center px-5 ">
         <div
           data-aos="fade-up"
           className="relative w-full rounded-[24px] border border-slate-700   sm:mx-auto sm:max-w-xl"
         >
           <div className="relative mx-8 rounded-3xl   py-5 shadow sm:p-10 sm:py-5 md:mx-0">
             <div className=" mx-auto max-w-md">
-              <div className=" flex flex-col gap-5">
+              <div className=" flex flex-col gap-3">
                 <div
                   data-aos="fade-right"
                   data-aos-delay="100"
@@ -70,6 +70,10 @@ export default function Home() {
                 </div>
 
                 <div className="w-full border-b border-slate-500 "></div>
+                <div className="z-10 text-green-700">
+                  улица Кавказ, 80-82, Каякентский район, Дагестан, Россия,
+                  368301
+                </div>
                 <div className="z-10 w-full ">
                   <LazyMap />
                 </div>
